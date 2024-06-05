@@ -1,0 +1,12 @@
+---
+import config from '../../config.mjs';
+import SocialIcon from './SocialIcon.astro';
+---
+
+
+<ul class="list-none text-[14px] font-normal flex flex-initial flex-row content-center items-center gap-x-[25px]">
+  <SocialIcon socialUrl={config?.social?.website} socialType="website" />
+  <SocialIcon socialUrl={config?.social?.github} socialType="github" />
+  <SocialIcon socialUrl={config?.social?.instagram} socialType="instagram" />
+</ul>
+
