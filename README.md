@@ -1,1 +1,1 @@
-# ☕ blog area for cooking since I've recently started cooking
+# ☕ blog area for cooking recipes I find 
