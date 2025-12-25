@@ -5,24 +5,24 @@ import { Quote, ChevronLeft, ChevronRight } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah Mitchell",
-    role: "Monthly Donor",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80",
-    quote: "Being part of Hapi's mission has been incredibly rewarding. Seeing the direct impact of my contributions on communities around the world gives me hope for a better future.",
+    name: "General Dempsey",
+    role: "Community Supporter",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
+    quote: "PryCare's dedication to serving our community is truly inspiring. Their hands-on approach to helping families in need makes a real difference in Killeen.",
     date: "December 2024",
   },
   {
     name: "David Chen",
     role: "Corporate Partner",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
-    quote: "Partnering with Hapi was one of the best decisions our company made. Their transparency and dedication to creating sustainable change aligned perfectly with our values.",
+    quote: "Partnering with PryCare was one of the best decisions our company made. Their transparency and dedication to creating sustainable change aligned perfectly with our values.",
     date: "November 2024",
   },
   {
     name: "Maria Rodriguez",
     role: "Volunteer Coordinator",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80",
-    quote: "I've worked with many organizations, but Hapi's commitment to community empowerment is unmatched. They truly listen to and work alongside the people they serve.",
+    quote: "I've worked with many organizations, but PryCare's commitment to community empowerment is unmatched. They truly listen to and work alongside the people they serve.",
     date: "October 2024",
   },
 ];
@@ -56,7 +56,7 @@ const Testimonials = () => {
             What People Say
           </h2>
           <p className="text-lg text-muted-foreground">
-            Hear from our community of donors, partners, and volunteers about their experience with Hapi.
+            Hear from our community of donors, partners, and volunteers about their experience with PryCare.
           </p>
         </motion.div>
 
