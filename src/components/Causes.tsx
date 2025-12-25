@@ -88,7 +88,7 @@ const Causes = () => {
   const isHeaderInView = useInView(headerRef, { once: true, margin: "-100px" });
 
   return (
-    <section id="causes" className="py-24 lg:py-32 bg-secondary/30">
+    <section id="causes" className="py-24 lg:py-32 bg-primary">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Header */}
         <motion.div
@@ -98,13 +98,13 @@ const Causes = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
+          <span className="inline-block px-4 py-2 bg-primary-foreground/20 text-primary-foreground rounded-full text-sm font-medium mb-4">
             Our Causes
           </span>
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4">
             Campaigns
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-primary-foreground/80">
             Join our ongoing campaigns and help us create lasting change in communities around the world.
           </p>
         </motion.div>
