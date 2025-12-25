@@ -12,14 +12,14 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Hapi - Nonprofit Organization | Changing Lives Together</title>
+        <title>PryCare - Community Helping Community | Hand to Hand</title>
         <meta
           name="description"
-          content="Join Hapi in our mission to provide clean water, education, and healthcare to communities in need. Donate today and help transform lives worldwide."
+          content="Join PryCare in our mission to support families in need through community food programs and volunteer efforts. Community helping community, hand to hand."
         />
         <meta
           name="keywords"
-          content="nonprofit, charity, donation, clean water, education, healthcare, volunteer, global impact"
+          content="nonprofit, charity, donation, food distribution, community support, volunteer, local impact, PryCare"
         />
       </Helmet>
 

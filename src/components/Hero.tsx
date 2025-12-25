@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import { motion } from "framer-motion";
+import volunteersImg from "@/assets/volunteers-2.jpeg";
 
 const Hero = () => {
   return (
@@ -33,7 +34,7 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="inline-block px-4 py-2 bg-primary-foreground/20 rounded-full text-primary-foreground text-sm font-medium mb-6"
             >
-              🌍 Making a Difference Together
+              🤝 Community Helping Community
             </motion.span>
 
             <motion.h1
@@ -42,9 +43,9 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="font-heading text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-primary-foreground leading-tight mb-6"
             >
-              Help Us Change
+              Hand to Hand,
               <span className="block mt-2">
-                Lives <span className="text-accent">Forever</span>
+                Heart to <span className="text-accent">Heart</span>
               </span>
             </motion.h1>
 
@@ -54,8 +55,8 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-lg md:text-xl text-primary-foreground/80 max-w-xl mx-auto lg:mx-0 mb-8"
             >
-              Join us in our mission to provide clean water, education, and
-              healthcare to communities in need around the world.
+              Join us in our mission to support families in need through 
+              community food programs and local volunteer efforts.
             </motion.p>
 
             <motion.div
@@ -82,9 +83,9 @@ const Hero = () => {
               className="flex flex-wrap justify-center lg:justify-start gap-8 mt-12"
             >
               {[
-                { value: "15K+", label: "Donors" },
-                { value: "$2.5M", label: "Raised" },
-                { value: "50+", label: "Countries" },
+                { value: "500+", label: "Volunteers" },
+                { value: "10K+", label: "Families Served" },
+                { value: "5+", label: "Communities" },
               ].map((stat, index) => (
                 <div key={index} className="text-center lg:text-left">
                   <p className="font-heading text-3xl md:text-4xl font-bold text-primary-foreground">
@@ -106,11 +107,11 @@ const Hero = () => {
             className="flex-1 relative hidden lg:block"
           >
             <div className="relative w-full max-w-lg mx-auto">
-              {/* Main Image Placeholder */}
+              {/* Main Image */}
               <div className="aspect-[4/5] rounded-3xl bg-primary-foreground/20 backdrop-blur-sm overflow-hidden shadow-elevated">
                 <img
-                  src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80"
-                  alt="Children smiling and learning together"
+                  src={volunteersImg}
+                  alt="PryCare volunteers helping at food distribution"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -124,11 +125,11 @@ const Hero = () => {
               >
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <span className="text-2xl">❤️</span>
+                    <span className="text-2xl">🍎</span>
                   </div>
                   <div>
-                    <p className="font-bold text-foreground">1.2M+</p>
-                    <p className="text-sm text-muted-foreground">Lives Changed</p>
+                    <p className="font-bold text-foreground">10K+</p>
+                    <p className="text-sm text-muted-foreground">Families Served</p>
                   </div>
                 </div>
               </motion.div>
@@ -140,7 +141,7 @@ const Hero = () => {
                 transition={{ duration: 0.8, delay: 1.2 }}
                 className="absolute right-0 top-10 translate-x-1/4 bg-accent text-accent-foreground rounded-full px-4 py-2 shadow-lg z-20"
               >
-                <span className="font-bold text-sm">100% Transparent</span>
+                <span className="font-bold text-sm">Hand to Hand</span>
               </motion.div>
             </div>
           </motion.div>
