@@ -2,12 +2,13 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { Quote, ChevronLeft, ChevronRight } from "lucide-react";
+import generalDempseyImg from "@/assets/general-dempsey.jpg";
 
 const testimonials = [
   {
     name: "General Dempsey",
     role: "Community Supporter",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
+    image: generalDempseyImg,
     quote: "PryCare's dedication to serving our community is truly inspiring. Their hands-on approach to helping families in need makes a real difference in Killeen.",
     date: "December 2024",
   },
