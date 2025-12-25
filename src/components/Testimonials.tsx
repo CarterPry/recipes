@@ -6,11 +6,11 @@ import generalDempseyImg from "@/assets/general-dempsey.jpg";
 
 const testimonials = [
   {
-    name: "General Dempsey",
-    role: "Community Supporter",
+    name: "Martin Dempsey",
+    role: "Retired General",
     image: generalDempseyImg,
     quote: "PryCare's dedication to serving our community is truly inspiring. Their hands-on approach to helping families in need makes a real difference in Killeen.",
-    date: "December 2024",
+    date: "Jan 2026",
   },
   {
     name: "David Chen",
