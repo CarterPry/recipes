@@ -2,27 +2,28 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Heart, Users, Globe, Sparkles } from "lucide-react";
+import volunteersImg from "@/assets/volunteers-1.jpeg";
 
 const features = [
   {
     icon: Heart,
     title: "Compassionate Care",
-    description: "Every action we take is driven by our deep commitment to helping those in need.",
+    description: "Every action we take is driven by our deep commitment to helping families in our community.",
   },
   {
     icon: Users,
     title: "Community First",
-    description: "We work alongside local communities to create sustainable, lasting change.",
+    description: "We work alongside local volunteers to create sustainable, lasting support for those in need.",
   },
   {
     icon: Globe,
-    title: "Global Reach",
-    description: "Our programs span across 50+ countries, reaching those who need it most.",
+    title: "Local Impact",
+    description: "Our programs serve families across multiple communities in the greater region.",
   },
   {
     icon: Sparkles,
-    title: "Transparent Impact",
-    description: "100% of donations go directly to our programs. Track your impact in real-time.",
+    title: "Hand to Hand",
+    description: "Direct support from community to community. Every donation goes directly to families.",
   },
 ];
 
@@ -49,8 +50,8 @@ const About = () => {
               {/* Main Image */}
               <div className="rounded-3xl overflow-hidden shadow-elevated">
                 <img
-                  src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800&q=80"
-                  alt="Volunteers helping community members"
+                  src={volunteersImg}
+                  alt="PryCare volunteers at food distribution event"
                   className="w-full h-[500px] object-cover"
                 />
               </div>
@@ -62,8 +63,8 @@ const About = () => {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="absolute -bottom-8 -right-8 bg-primary text-primary-foreground rounded-2xl p-6 shadow-elevated"
               >
-                <p className="font-heading text-5xl font-bold">25+</p>
-                <p className="text-primary-foreground/80">Years of Impact</p>
+                <p className="font-heading text-5xl font-bold">10K+</p>
+                <p className="text-primary-foreground/80">Families Served</p>
               </motion.div>
 
               {/* Decorative Element */}
@@ -83,20 +84,21 @@ const About = () => {
             </span>
 
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 leading-tight">
-              Empowering Communities,{" "}
-              <span className="text-primary">Transforming Lives</span>
+              Community Helping Community,{" "}
+              <span className="text-primary">Hand to Hand</span>
             </h2>
 
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Since 1998, Hapi has been dedicated to creating sustainable change
-              in communities worldwide. We believe that everyone deserves access
-              to clean water, quality education, and essential healthcare.
+              PryCare is dedicated to serving families in need through 
+              community food programs and volunteer support. We believe that 
+              neighbors helping neighbors creates the strongest foundation 
+              for lasting change.
             </p>
 
             <p className="text-muted-foreground mb-10">
-              Our holistic approach focuses on empowering local leaders and
-              building infrastructure that communities can maintain for
-              generations to come.
+              Our volunteer-driven approach ensures that every donation and 
+              every hour of service goes directly to supporting families 
+              in our community.
             </p>
 
             {/* Features Grid */}

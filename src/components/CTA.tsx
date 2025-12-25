@@ -2,7 +2,8 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { Heart, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import logoCircle from "@/assets/prycare-logo-circle.png";
 
 const CTA = () => {
   const ref = useRef(null);
@@ -12,11 +13,7 @@ const CTA = () => {
     <section className="py-24 lg:py-32 bg-secondary/50 relative overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img
-          src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=1920&q=80"
-          alt="Volunteers working together"
-          className="w-full h-full object-cover"
-        />
+        <div className="w-full h-full bg-primary" />
         <div className="absolute inset-0 bg-foreground/80" />
       </div>
 
@@ -32,9 +29,13 @@ const CTA = () => {
             initial={{ scale: 0 }}
             animate={isInView ? { scale: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary mb-8"
+            className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-primary-foreground/10 mb-8"
           >
-            <Heart className="w-10 h-10 text-primary-foreground fill-current" />
+            <img 
+              src={logoCircle} 
+              alt="PryCare Logo" 
+              className="w-20 h-20 object-contain"
+            />
           </motion.div>
 
           <motion.h2
@@ -52,7 +53,8 @@ const CTA = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-lg text-primary-foreground/80 mb-10 max-w-xl mx-auto"
           >
-            Your donation, no matter the size, creates ripples of change. Join thousands of supporters who are transforming lives every day.
+            Your support helps families in our community. Whether you donate, volunteer, 
+            or spread the word — every action creates ripples of change.
           </motion.p>
 
           <motion.div
@@ -81,7 +83,7 @@ const CTA = () => {
             transition={{ duration: 0.6, delay: 0.7 }}
             className="flex flex-wrap justify-center gap-6 mt-12"
           >
-            {["🔒 Secure Donation", "💯 100% Transparent", "🌍 Tax Deductible"].map(
+            {["🤝 Hand to Hand", "💯 100% Community Driven", "🏠 Local Impact"].map(
               (badge) => (
                 <span
                   key={badge}

@@ -1,5 +1,6 @@
-import { Heart, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, ArrowRight } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoCircle from "@/assets/prycare-logo-circle.png";
 
 const footerLinks = {
   company: [
@@ -9,9 +10,9 @@ const footerLinks = {
     { name: "Contact", href: "#contact" },
   ],
   causes: [
-    { name: "Clean Water", href: "#" },
-    { name: "Education", href: "#" },
-    { name: "Healthcare", href: "#" },
+    { name: "Food Distribution", href: "#" },
+    { name: "Community Support", href: "#" },
+    { name: "Volunteer Programs", href: "#" },
     { name: "Emergency Relief", href: "#" },
   ],
   support: [
@@ -37,17 +38,19 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <a href="#home" className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-                <Heart className="w-5 h-5 text-primary-foreground fill-current" />
-              </div>
+            <a href="#home" className="flex items-center gap-3 mb-6">
+              <img 
+                src={logoCircle} 
+                alt="PryCare Logo" 
+                className="w-12 h-12 object-contain"
+              />
               <span className="font-heading text-2xl font-bold text-primary-foreground">
-                Hapi
+                PryCare
               </span>
             </a>
 
             <p className="text-primary-foreground/70 mb-6 max-w-sm">
-              Empowering communities and transforming lives through sustainable development programs worldwide.
+              Community Helping Community — Hand to Hand. Supporting families in need through local food programs and volunteer efforts.
             </p>
 
             {/* Newsletter */}
@@ -100,7 +103,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-heading text-lg font-semibold mb-6">Our Causes</h4>
+            <h4 className="font-heading text-lg font-semibold mb-6">Our Programs</h4>
             <ul className="space-y-3">
               {footerLinks.causes.map((link) => (
                 <li key={link.name}>
@@ -134,7 +137,7 @@ const Footer = () => {
             <div className="mt-8 space-y-3">
               <div className="flex items-center gap-3 text-primary-foreground/70">
                 <Mail className="w-5 h-5 text-primary" />
-                <span>hello@hapi.org</span>
+                <span>hello@prycare.org</span>
               </div>
               <div className="flex items-center gap-3 text-primary-foreground/70">
                 <Phone className="w-5 h-5 text-primary" />
@@ -142,7 +145,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3 text-primary-foreground/70">
                 <MapPin className="w-5 h-5 text-primary" />
-                <span>San Francisco, CA</span>
+                <span>Texas, USA</span>
               </div>
             </div>
           </div>
@@ -154,7 +157,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-primary-foreground/60 text-sm">
-              © 2024 Hapi. All rights reserved.
+              © 2024 PryCare. All rights reserved.
             </p>
             <div className="flex gap-6">
               <a

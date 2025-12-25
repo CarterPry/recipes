@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Heart } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import logoShield from "@/assets/prycare-logo-shield.png";
 
 const navLinks = [
   { name: "Home", href: "#home" },
@@ -38,13 +39,15 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <Heart className="w-5 h-5 text-primary-foreground fill-current" />
-            </div>
+            <img 
+              src={logoShield} 
+              alt="PryCare Logo" 
+              className="w-12 h-12 object-contain group-hover:scale-110 transition-transform duration-300"
+            />
             <span className={`font-heading text-2xl font-bold transition-colors duration-300 ${
               scrolled ? "text-foreground" : "text-primary-foreground"
             }`}>
-              Hapi
+              PryCare
             </span>
           </a>
 
