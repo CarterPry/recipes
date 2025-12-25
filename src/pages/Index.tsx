@@ -28,7 +28,8 @@ const Index = () => {
         <Hero />
         <About />
         <Causes />
-        <Impact />
+        {/* Impact section disabled - uncomment to re-enable */}
+        {/* <Impact /> */}
         <Testimonials />
         <CTA />
         <Footer />

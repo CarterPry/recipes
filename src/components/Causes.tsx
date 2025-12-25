@@ -6,31 +6,13 @@ import { ArrowRight, Droplets, BookOpen, Stethoscope } from "lucide-react";
 
 const causes = [
   {
-    icon: Droplets,
-    title: "Clean Water Access",
-    description: "Providing clean, safe drinking water to communities facing water scarcity and contamination.",
-    raised: 125000,
-    goal: 150000,
-    image: "https://images.unsplash.com/photo-1541544537156-7627a7a4aa1c?w=600&q=80",
-    color: "from-blue-400 to-cyan-500",
-  },
-  {
-    icon: BookOpen,
-    title: "Education for All",
-    description: "Building schools and providing resources to ensure every child has access to quality education.",
-    raised: 89000,
-    goal: 120000,
-    image: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&q=80",
-    color: "from-amber-400 to-orange-500",
-  },
-  {
     icon: Stethoscope,
-    title: "Healthcare Programs",
-    description: "Delivering essential medical care and building health facilities in underserved regions.",
-    raised: 178000,
-    goal: 200000,
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80",
-    color: "from-rose-400 to-pink-500",
+    title: "Killeen, Texas Community Support",
+    description: "Providing essential resources, food distribution, and community aid to families in need throughout Killeen, Texas.",
+    raised: 45000,
+    goal: 75000,
+    image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=600&q=80",
+    color: "from-primary to-primary/70",
   },
 ];
 
@@ -120,7 +102,7 @@ const Causes = () => {
             Our Causes
           </span>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Featured Campaigns
+            Campaigns
           </h2>
           <p className="text-lg text-muted-foreground">
             Join our ongoing campaigns and help us create lasting change in communities around the world.
@@ -128,24 +110,14 @@ const Causes = () => {
         </motion.div>
 
         {/* Causes Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex justify-center">
           {causes.map((cause, index) => (
-            <CauseCard key={cause.title} cause={cause} index={index} />
+            <div key={cause.title} className="w-full max-w-md">
+              <CauseCard cause={cause} index={index} />
+            </div>
           ))}
         </div>
 
-        {/* View All CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isHeaderInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="text-center mt-12"
-        >
-          <Button variant="default" size="lg">
-            View All Campaigns
-            <ArrowRight className="w-5 h-5" />
-          </Button>
-        </motion.div>
       </div>
     </section>
   );
